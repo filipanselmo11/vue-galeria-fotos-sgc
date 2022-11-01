@@ -1,6 +1,6 @@
 <template>
     <v-card class="mx-auto" max-width="344">
-        <v-img :src="'caminhoImagem'"></v-img>
+        <v-img :src=caminhoImagem></v-img>
         <v-card-title>Foto Nº {{ index }}</v-card-title>
         <v-card-actions>
             <v-dialog transition="dialog-bottom-transition" max-width="600">
