@@ -4,10 +4,9 @@
     <br/>
     <br/>
     <br/>
-    <v-row class="mb-6" no-gutters>
-        <v-col  v-for="n in 4" :key="n">
-            <card-foto
-                :index="n"></card-foto>
+    <v-row class="mb-6">
+        <v-col v-for="item in arrayData" :key="item.index">
+            <card-foto :index="item.index"></card-foto>
         </v-col>
     </v-row>
   </div>
@@ -17,6 +16,22 @@
 import CardFoto from './CardFoto.vue'
 export default {
   components: { CardFoto },
+  data:() => ({
+    arrayData:[
+        {index: 1},
+        {index: 2},
+        {index: 3},
+        {index: 4},
+        {index: 5},
+        {index: 6},
+        {index: 7},
+        {index: 8},
+        {index: 9},
+        {index: 10},
+        {index: 11},
+        {index: 12},
+    ],
+  }),
 
 }
 </script>
