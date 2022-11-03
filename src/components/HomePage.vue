@@ -7,10 +7,11 @@
     <v-row class="mb-6">
       <v-col v-for="item in arrayData" :key="item.index">
         <card-foto
-            :index="item.index"
-            :caminhoImagem="item.imagem"
-            :tituloImagem="item.tituloImagem"
-            :textoImagem="item.textoImagem"></card-foto>
+          :index="item.index"
+          :caminhoImagem="item.imagem"
+          :tituloImagem="item.tituloImagem"
+          :textoImagem="item.textoImagem"
+        ></card-foto>
       </v-col>
     </v-row>
   </div>
@@ -24,14 +25,28 @@ export default {
     arrayData: [
       {
         index: 1,
-        imagem:
-          "https://www.wallpaperflare.com/digital-art-men-city-futuristic-night-neon-science-fiction-wallpaper-udroj",
+        imagem:"@/src/assets/images/sgc-foto-1.jpg",
         tituloImagem: "Imagem 1",
-        textoImagem: "asdasdasdasdhjgasdjh asjhdsag hagsd",
+        textoImagem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
       },
-      { index: 2 },
-      { index: 3 },
-      { index: 4 },
+      {
+        index: 2,
+        imagem: '../../assets/images/sgc-foto-2.jpg',
+        tituloImagem: "Imagem 2",
+         textoImagem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+      },
+      {
+        index: 3,
+        imagem: '../../assets/images/sgc-foto-3.jpg',
+        tituloImagem: 'Imagem 3',
+         textoImagem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+      },
+      {
+        index: 4,
+        imagem: '../../assets/images/sgc-foto-4.jpg',
+        tituloImagem: 'Imagem 4',
+         textoImagem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+      },
       { index: 5 },
       { index: 6 },
       { index: 7 },
