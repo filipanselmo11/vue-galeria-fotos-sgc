@@ -15,10 +15,7 @@
       </v-col>
     </v-row>
     <v-row class="mb-6">
-      <v-col
-        v-for="item in data2"
-        :key="item.index"
-      >
+      <v-col v-for="item in data2" :key="item.index">
         <card-foto
           :index="item.index"
           :caminhoImagem="item.imagem"
@@ -27,18 +24,15 @@
         ></card-foto>
       </v-col>
       <v-row class="mt-6">
-      <v-col
-        v-for="item in data3"
-        :key="item.index"
-      >
-        <card-foto
-          :index="item.index"
-          :caminhoImagem="item.imagem"
-          :tituloImagem="item.tituloImagem"
-          :textoImagem="item.textoImagem"
-        ></card-foto>
-      </v-col>
-    </v-row>
+        <v-col v-for="item in data3" :key="item.index">
+          <card-foto
+            :index="item.index"
+            :caminhoImagem="item.imagem"
+            :tituloImagem="item.tituloImagem"
+            :textoImagem="item.textoImagem"
+          ></card-foto>
+        </v-col>
+      </v-row>
     </v-row>
   </div>
 </template>
@@ -53,89 +47,79 @@ export default {
         index: 1,
         imagem: require("../assets/images/sgc-foto-1.jpg"),
         tituloImagem: "Imagem 1",
-        textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem: "Foto 1 - Ilha da Juíza e atrás a Bela Adormecida",
       },
       {
         index: 2,
         imagem: require("../assets/images/sgc-foto-2.jpg"),
         tituloImagem: "Imagem 2",
-        textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem: "Foto 2 - Vista paronâmica da cidade",
       },
       {
         index: 3,
         imagem: require("../assets/images/sgc-foto-3.jpg"),
         tituloImagem: "Imagem 3",
-        textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem: "Foto 3 - Vista do ginásio do Colégio São Gabriel",
       },
       {
         index: 4,
         imagem: require("../assets/images/sgc-foto-4.jpg"),
         tituloImagem: "Imagem 4",
-        textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem: "Foto 4 - Vista da Bela Adormecida, pela praia da cidade.",
       },
     ],
     data2: [
       {
         index: 5,
-        imagem: require("../assets/images/sgc-foto-4.jpg"),
+        imagem: require("../assets/images/sgc-foto-5.jpg"),
         tituloImagem: "Imagem 5",
-         textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem:
+          "Foto 5 - Vista do por do sol na Serra do Cabari no fim de tarde",
       },
       {
         index: 6,
-        imagem: require("../assets/images/sgc-foto-4.jpg"),
+        imagem: require("../assets/images/sgc-foto-6.png"),
+        tituloImagem: "Imagem 6",
+        textoImagem:
+          "Foto 6 - Vista da Bela Adormecida coberta por um neblina no fim de tarde",
+      },
+      {
+        index: 7,
+        imagem: require("../assets/images/sgc-foto-7.jpg"),
         tituloImagem: "Imagem 7",
-         textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem: "Foto 7 - São Gabriel da Cahoeira por outro ângulo",
       },
       {
         index: 8,
-        imagem: require("../assets/images/sgc-foto-4.jpg"),
+        imagem: require("../assets/images/sgc-foto-8.jpg"),
         tituloImagem: "Imagem 8",
-         textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
-      },
-      {
-        index: 9,
-        imagem: require("../assets/images/sgc-foto-4.jpg"),
-        tituloImagem: "Imagem 9",
-         textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem: "Foto 8 - Vista das ilhas próximas a cidade, quando se chega de avião na cidade",
       },
     ],
     data3: [
       {
+        index: 9,
+        imagem: require("../assets/images/sgc-foto-9.jpg"),
+        tituloImagem: "Imagem 9",
+        textoImagem: "Foto 9 - Outro ângulo da cidade"
+      },
+      {
         index: 10,
-        imagem: require("../assets/images/sgc-foto-4.jpg"),
+        imagem: require("../assets/images/sgc-foto-10.jpg"),
         tituloImagem: "Imagem 10",
-         textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem: "Foto 10 - Vista da Serra do Cabari por outro ângulo, onde é possível ver também a Igreja Matriz da cidade"
       },
       {
         index: 11,
-        imagem: require("../assets/images/sgc-foto-4.jpg"),
-        tituloImagem: "Imagem 12",
-         textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        imagem: require("../assets/images/sgc-foto-11.jpg"),
+        tituloImagem: "Imagem 11",
+        textoImagem:"Foto 11 - Mais outro ângulo da cidade"
       },
       {
         index: 12,
-        imagem: require("../assets/images/sgc-foto-4.jpg"),
+        imagem: require("../assets/images/sgc-foto-12.png"),
         tituloImagem: "Imagem 12",
-         textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
-      },
-      {
-        index: 13,
-        imagem: require("../assets/images/sgc-foto-4.jpg"),
-        tituloImagem: "Imagem 13",
-         textoImagem:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt magna justo, vel molestie risus dignissim vitae. Morbi ultricies enim ut tellus suscipit, nec placerat odio dapibus. Fusce aliquam condimentum enim, et dignissim elit. Aenean auctor blandit dictum. Proin orci mauris, commodo ac tellus et, hendrerit varius lectus. In consequat pharetra interdum. Cras rutrum faucibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida risus at nunc tincidunt, eu porttitor metus molestie. Cras rutrum lacus dui, consectetur tincidunt metus suscipit a.",
+        textoImagem:"Foto 12 - Vista da Bela Adormecida por completo"
       },
     ],
   }),

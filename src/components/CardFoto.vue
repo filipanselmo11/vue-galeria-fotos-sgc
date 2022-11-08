@@ -14,6 +14,10 @@
                         <v-toolbar color="light-blue darken-2" dark>
                             {{ tituloImagem }}
                         </v-toolbar>
+                        <br/>
+                        <v-card-text>
+                            <v-img :src=caminhoImagem></v-img>
+                        </v-card-text>
                         <v-card-text>
                             {{ textoImagem }}
                         </v-card-text>
