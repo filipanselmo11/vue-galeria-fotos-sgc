@@ -21,3 +21,11 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.v-main {
+  margin: 0 !important;
+  /* background: yellow !important; */
+  box-sizing: border-box !important;
+}
+</style>
